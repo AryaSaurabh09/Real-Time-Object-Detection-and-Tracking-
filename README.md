@@ -8,10 +8,9 @@ Welcome to the repository for Real-time Object Detection and Tracking using Tiny
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Structure](#structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contact](#contact)
 
 ## Introduction
 
@@ -31,7 +30,7 @@ To install and run the project, follow these steps:
 
 1. **Clone the repository**:
    ```sh
-   gh repo clone AryaSaurabh09/Real-Time-Object-Detection-and-Tracking-
+   git clone https://github.com/AryaSaurabh09/Real-Time-Object-Detection-and-Tracking-.git
    cd Real-Time-Object-Detection-and-Tracking-
    ```
 
@@ -40,20 +39,13 @@ To install and run the project, follow these steps:
    pip install -r requirements.txt
    ```
 
-3. **Download the pre-trained models**:
-   Ensure you have the necessary pre-trained models for object detection. You can download them from the following link:
-   - [Model Download Link](#)
-
-4. **Configure the settings**:
-   Update the `config.yaml` file with your system's specifications and preferences.
-
 ## Usage
 
 You can run the model for different sources using the following commands:
 
 ### For Video File
 ```sh
-python yolo\v8\detect\detect_and_trk.py model=yolov8s.pt source="test.mp4" show=True
+python yolo\v8\detect\detect_and_trk.py model=yolov8m.pt source="test.mp4" show=True
 ```
 
 ### For Image File
@@ -71,14 +63,11 @@ python yolo\v8\detect\detect_and_trk.py model=yolov8m.pt source=0 show=True
 python yolo\v8\detect\detect_and_trk.py model=yolov8m.pt source=1 show=True
 ```
 
-You can customize the parameters and settings in the `config.yaml` file as per your requirements.
-
-## Project Structure
+## Structure
 
 ```plaintext
 ├── README.md
 ├── requirements.txt
-├── config.yaml
 ├── main.py
 ├── yolo/
 │   ├── v8/
@@ -97,28 +86,24 @@ You can customize the parameters and settings in the `config.yaml` file as per y
 
 ## Technologies Used
 
+- **Base Libraries:**
+  - Matplotlib (plotting library)
+  - NumPy (numerical computing)
+  - OpenCV (computer vision library)
+  - Pillow (Python Imaging Library)
+  - Torch (deep learning framework)
+  - Torchvision (computer vision library for PyTorch)
+  - Ultralytics (deep learning research tools)
+
+- **Tracking:**
+  - FilterPy (Kalman filtering and optimal estimation library)
+  - scikit-image (image processing library)
+
 - **Programming Languages**: Python
-- **Frameworks**: TensorFlow, OpenCV
-- **Libraries**: NumPy, SciPy, scikit-learn
-- **Communication Protocols**: WCN (Wireless Communication Networks)
+- **Frameworks**: TensorFlow, PyTorch, TensorFlow Lite
 
-## Contributing
 
-We welcome contributions from the community! To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Feel free to explore and contribute to enhance the functionality of this real-time object detection and tracking system using WCN.
+## Contact
 ```
-
-Simply copy the code above and paste it into your `README.md` file in your GitHub repository.
+For any queries, feel free to reach out to me at saurabharya2421@gmail.com
+```
